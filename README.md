@@ -11,6 +11,6 @@
 * Get initial password
 
 ```shell
-docker exec -i <container_id> \
+docker exec -i jenkinsdocker_jenkins_1 \
     cat /var/jenkins_home/secrets/initialAdminPassword
 ```

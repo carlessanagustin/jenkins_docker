@@ -6,11 +6,11 @@ volumes:
 services:
 
   jenkins:
-    image: jenkins
+    image: jenkins/jenkins:lts
     restart: always
     ports:
       - "8080:8080"
     expose:
-      - "50000:50000"
+      - 50000
     volumes:
       - jenkins_home:/var/jenkins_home
