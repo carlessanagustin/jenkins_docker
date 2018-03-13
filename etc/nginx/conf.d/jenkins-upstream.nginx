@@ -1,0 +1,5 @@
+
+upstream jenkins {
+  least_conn;
+  server jenkins:8080 max_fails=5 fail_timeout=20 weight=10;
+}
